@@ -8,6 +8,9 @@
       "@shared/*": [
         "shared/*"
       ],
+      "@layouts/*": [
+        "layouts/*"
+      ],
     },
     "target": "es5",
     "lib": [

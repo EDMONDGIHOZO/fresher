@@ -1,8 +1,9 @@
-import { title } from '../../shared/styles'
-
+import { container, title } from './styles'
+import Logo from '@components/logo'
 const Header = () => (
-  <header>
-    <h1 css={title}>Welcome to fresher app</h1>
+  <header css={container}>
+    <Logo />
+    <h1 css={title}> Fresher app </h1>
   </header>
 )
 

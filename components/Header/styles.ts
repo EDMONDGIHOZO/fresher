@@ -1,10 +1,20 @@
 import { css } from '@emotion/react'
 
+const SR_ONLY = `
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+`
+
 const container = css`
-  min-height: 100%;
-  padding: 0 0.5rem;
+  min-height: 40vh;
   display: grid;
   place-items: center;
+  background-color: var(--background-accent);
 `
 
 const main = css`
@@ -17,10 +27,7 @@ const main = css`
 `
 
 const title = css`
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  text-align: center;
+  ${SR_ONLY}
 `
 
 export { container, main, title }
